@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boxes Layout</title>
+  <style>
+    .container {
+      display: flex;
+      gap: 10px; /* space between boxes */
+      align-items: stretch; /* makes side boxes same height as rectangle */
+    }
+
+    .rectangle {
+      width: 150px;
+      height: 300px;
+      border: 2px solid black;
+      background-color: lightblue;
+    }
+
+    .side-boxes {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .box {
+      width: 150px;
+      height: 65px;
+      border: 2px solid black;
+      background-color: lightcoral;
+      flex: 1; 
+    }
+     .sbox {
+      width: 150px;
+      height: 150px;
+      margin-top: 10px;
+      border: 2px solid black;
+      background-color: lightcoral;
+      
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="rectangle"></div>
+
+    <div class="side-boxes">
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <div class="rectangle"></div>
+  </div>
+  <div class="container">
+    <div class="sbox"></div>
+    <div class="sbox"></div>
+    <div class="sbox"></div>
+  </div>
+
+</body>
+</html>
